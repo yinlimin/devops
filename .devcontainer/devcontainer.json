@@ -1,1 +1,13 @@
-dev
+{
+  "name": "Python 3.12",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": { "VARIANT": "3.12" }
+  },
+  "runArgs": [ "-u", "root" ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": ["ms-python.python"]
+}
